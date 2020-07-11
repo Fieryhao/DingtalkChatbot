@@ -31,12 +31,12 @@ logging.basicConfig(level=logging.ERROR)
 if __name__ == '__main__':
     # *************************************这里填写自己钉钉群自定义机器人的token*****************************************
     # 一、旧版的钉钉自定义机器人（无需安全设置）
-    old_webhook = 'https://oapi.dingtalk.com/robot/send?access_token=77eb420ff2761ad516d974e1428c3e198b84faabc9c9ef8e86b2c71ac60bd0ea'
+    old_webhook = 'https://oapi.dingtalk.com/robot/send?access_token=78a10e63de8a14663643a6d7165bf42d343c14e892571335e0f8471838ff7659'
     # 二、新版的钉钉自定义机器人必须配置安全设置（自定义关键字、加签、IP地址/段），其中“加签”需要传入密钥才能发送成功
-    new_webhook = 'https://oapi.dingtalk.com/robot/send?access_token=aa62d3aa55cd785609d1de1b8c82ebc0d5a106aa5983833ed15023cef80db7fa'
+    new_webhook = 'https://oapi.dingtalk.com/robot/send?access_token=78a10e63de8a14663643a6d7165bf42d343c14e892571335e0f8471838ff7659'
     secret = 'SEC11b94b27f5953b94deee33840d2863ebfbe7c75b68848613cdbd80228752d63b'  # 创建机器人时钉钉设置页面有提供
     # 用户手机号列表
-    at_mobiles = ['18825166XXX', '这里填@的人的手机号，可自定义@的位置，默认添加在消息末尾']
+    at_mobiles = ['16619995567', '这里填@的人的手机号，可自定义@的位置，默认添加在消息末尾']
     # 初始化机器人小丁
     # xiaoding = DingtalkChatbot(old_webhook)  # 旧版初始化方式
     # 新版安全设置为“加签”时，需要传入请求密钥，同时支持设置消息链接跳转方式，默认pc_slide=False为跳转到浏览器，pc_slide为在PC端侧边栏打开
