@@ -34,7 +34,7 @@ if __name__ == '__main__':
     old_webhook = 'https://oapi.dingtalk.com/robot/send?access_token=78a10e63de8a14663643a6d7165bf42d343c14e892571335e0f8471838ff7659'
     # 二、新版的钉钉自定义机器人必须配置安全设置（自定义关键字、加签、IP地址/段），其中“加签”需要传入密钥才能发送成功
     new_webhook = 'https://oapi.dingtalk.com/robot/send?access_token=78a10e63de8a14663643a6d7165bf42d343c14e892571335e0f8471838ff7659'
-    secret = 'SEC11b94b27f5953b94deee33840d2863ebfbe7c75b68848613cdbd80228752d63b'  # 创建机器人时钉钉设置页面有提供
+    secret = 'SECb8fab8961c7b09c2af09379c4761b4f711dcecb516561f6ceebfb91bcf54d063'  # 创建机器人时钉钉设置页面有提供
     # 用户手机号列表
     at_mobiles = ['16619995567', '这里填@的人的手机号，可自定义@的位置，默认添加在消息末尾']
     # 初始化机器人小丁
